@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Registration form with validation">
+  <link rel="stylesheet" href="styles.css">
+  <title>Registration form</title>
+</head>
+<body>
+  <main>
+    <h1>Registration</h1>
+    <form action="" id="registration-form" novalidate="novalidate">
+      <div>
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" required="required">
+        <p class="error-message" id="first-name-error"></p>
+      </div>
+      <div>
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" required="required">
+        <p class="error-message" id="last-name-error"></p>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required="required">
+        <p class="error-message" id="email-error"></p>
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required="required" minlength="8">
+        <p class="error-message" id="password-error"></p>
+      </div>
+      <div>
+        <label for="password-confirm">Password Confirm</label>
+        <input type="password" id="password-confirm" name="password-confirm" required="required" minlength="8">
+        <p class="error-message" id="password-confirm-error"></p>
+      </div>
+      <div>
+        <label for="birth-day">Birthday</label>
+        <input type="date" id="birth-day" name="birth-day" required="required">
+        <p class="error-message" id="birth-day-error"></p>
+      </div>
+      <button type="submit" id="form-button" disabled="disabled">Send</button>
+    </form>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
